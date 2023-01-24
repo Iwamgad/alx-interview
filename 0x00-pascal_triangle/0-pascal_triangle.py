@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """This module contains a function that returns the pascal triangle's list"""
 
 def pascal_triangle(n):
@@ -11,7 +10,7 @@ def pascal_triangle(n):
 
         if n <= 0:
                 return listToReturn
-
+        
         for i in range(n):
                 
                 tempList = []
