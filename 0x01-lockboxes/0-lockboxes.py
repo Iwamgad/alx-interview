@@ -2,28 +2,31 @@ def canUnlockAll(boxes):
     """
     Determines if all the boxes can be opened
     """
-    foundKey = False
+~def canUnlockAll(boxes):
+    '''determines if all the boxes can be opened or not
+    Returns:
+        True: all boxes can be opened
+        False: not all boxes can be opened
+    '''
+        length = len(boxes)
+            keys = set()
+                opened_boxes = []
+                    i = 0
 
-    i = 0
+                        while i < length:
+                                    oldi = i
+                                            opened_boxes.append(i)
+                                                    keys.update(boxes[i])
+                                                            for key in keys:
+                                                                            if key != 0 and key < length and key not in opened_boxes:
+                                                                                                i = key
+                                                                                                                break
+                                                                                                                    if oldi != i:
+                                                                                                                                    continue
+                                                                                                                    else:
+                                                                                                                                    break
 
-    while (i < len(boxes)):
-        foundKey = False
-        j = 0
-        while j < len(boxes):
-            k = 0
-            while k < len(boxes[j]):
-                if (boxes[j][k] == i) and i != j:
-                    foundKey = True
-                    break
-                k += 1
-            if foundKey:
-                break
-
-            j += 1
-
-        i += 1
-
-    if foundKey:
-        return True
-    else:
-        return False
+                                                                                                                                    for i in range(length):
+                                                                                                                                                if i not in opened_boxes and i != 0:
+                                                                                                                                                                return False
+                                                                                                                                                                return True~
