@@ -20,5 +20,4 @@ def pascal_triangle(n):
                         else:
                                 tempList.append(listToReturn[i - 1][j - 1] + listToReturn[i - 1][j])
                 listToReturn.append(tempList)
-        return listToReturn
-                                                                                            
+        return listToReturn                                                                              
