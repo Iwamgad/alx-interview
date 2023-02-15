@@ -50,6 +50,5 @@ try:
             if (counter == 10):
                 print_msg(dict_sc, total_file_size)
                 counter = 0
-
 finally:
     print_msg(dict_sc, total_file_size)
